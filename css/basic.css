@@ -23,3 +23,14 @@
     width:320px;
 }
 
+/*
+Background topbar : #51473d
+Background content: #eae7d2
+Text color        : #996666
+*/
+#topbar{
+    background-color:#51473d;
+}
+#content{
+    background-color:#eae7d2;
+}
