@@ -2,7 +2,7 @@
 
 /*Layout*/
 #container{
-	max-width:960px;
+	max-width:600px;
 	margin:auto;
 }
 #topbar{
@@ -19,12 +19,12 @@
 }
 #maincontent{
 	float:left;
-	width:623px;
+	width:384px;
 	margin-top:10px;
 }
 #subcontent{
     float:right;
-    width:304px;
+    width:184px;
     margin-top:10px;
 }
 #bottomcontent{
@@ -39,19 +39,6 @@ Text color topbar : #eae7d2
 Text color content: #797066
 
 */
-body{
-    font-family:Verdana, Geneva, sans-serif;
-    background-color:#fcfaf4;
-}
-#topbar, #menu{
-    background-color:#51473d;
-    color:#eae7d2;
-}
-#topbar{
-    font-size:80%;
-    font-style:italic;
-    text-align:right;
-}
 
 /*Länkar i menyn*/
 #menu ul{
@@ -78,14 +65,29 @@ body{
 /*Övriga länkar*/
 #content ul{
     font-size:smaller;
+    line-height:18px;
     list-style-type:none;
     margin-left:-40px;
+    margin-top:-10px;
 }
-#content a:link, #content a:visited{
-    color:#51473d;
-}
+    #content a:link, #content a:visited{
+        color:#51473d;
+    }
 
 /*Mer övergripande text och färger*/
+body{
+    font-family:Verdana, Geneva, sans-serif;
+    background-color:#fcfaf4;
+}
+#topbar, #menu{
+    background-color:#51473d;
+    color:#eae7d2;
+}
+#topbar{
+    font-size:80%;
+    font-style:italic;
+    text-align:right;
+}
 #content{
     background-color:#eae7d2;
     color:#797066;
@@ -101,6 +103,7 @@ body{
     }
     #maincontent h1{
         color:#797066;
+        margin-top:10px;
     }
     #maincontent p{
         line-height:20px;
@@ -112,6 +115,7 @@ body{
     }
     #subcontent h1{
         font-size:120%;
+        margin-top:20px;
     }
     #subcontent h2{
         font-size:100%;
@@ -121,9 +125,21 @@ body{
         line-height:20px;
         font-weight:lighter;
         font-size:x-small;
+        padding-top:12px;
     }
 #bottomcontent{
     font-size:80%;
     font-style:italic;
     text-align:left;
+}
+
+/*Bilder*/
+#maincontent img{
+    float:left;
+    margin-right:5px;
+}
+#topbar{
+    background-image:url("pics/coffey.jpg");
+    background-position:center;
+	background-repeat:no-repeat;
 }
