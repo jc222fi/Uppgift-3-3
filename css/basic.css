@@ -15,21 +15,24 @@
     float:left;
 }
 #content{
-    max-width:960px;
+    max-width:958px;
 }
 #maincontent{
 	float:left;
-	width:640px;
+	width:623px;
+	margin-top:10px;
 }
 #subcontent{
     float:right;
-    width:320px;
+    width:304px;
+    margin-top:10px;
 }
 #bottomcontent{
     clear:both;
 }
 
 /*
+Background body   : #fcfaf4
 Background topbar : #51473d
 Background content: #eae7d2
 Text color topbar : #eae7d2
@@ -38,6 +41,7 @@ Text color content: #797066
 */
 body{
     font-family:Verdana, Geneva, sans-serif;
+    background-color:#fcfaf4;
 }
 #topbar, #menu{
     background-color:#51473d;
@@ -48,31 +52,47 @@ body{
     font-style:italic;
     text-align:right;
 }
+
+/*Länkar i menyn*/
 #menu ul{
     list-style-type:none;
 }
-#menu a{
-    display:block;
-    text-transform:capitalize;
-    font-size:80%;
-    line-height:30px;
-    padding:5px 15px;
-    border-right:1px solid #51473d;
-}
-#menu a:link, #menu a:visited{
-    background-color:#797066; 
-    color:#eae7d2; 
-    text-decoration:none;
-}
-#menu a:focus, #menu a:hover{
-    background-color:#9c9084;
-}
-#menu .active{background-color:#eae7d2;color:#797066;}
+    #menu a{
+        display:block;
+        text-transform:capitalize;
+        font-size:80%;
+        line-height:30px;
+        padding:5px 15px;
+        border-right:1px solid #51473d;
+    }
+    #menu a:link, #menu a:visited{
+        background-color:#797066; 
+        color:#eae7d2; 
+        text-decoration:none;
+    }
+    #menu a:focus, #menu a:hover{
+        background-color:#9c9084;
+    }
+    #menu .active{background-color:#eae7d2;color:#797066;}
 
+/*Övriga länkar*/
+#content ul{
+    font-size:smaller;
+    list-style-type:none;
+    margin-left:-40px;
+}
+#content a:link, #content a:visited{
+    color:#51473d;
+}
+
+/*Mer övergripande text och färger*/
 #content{
     background-color:#eae7d2;
     color:#797066;
-    letter-spacing:1px;
+    border-right:1px solid #cecab9;
+    border-bottom:1px solid #cecab9;
+    border-left:1px solid #cecab9;
+    padding:8px;
 }
     h1, h2{
         color:#51473d;
@@ -82,11 +102,25 @@ body{
     #maincontent h1{
         color:#797066;
     }
+    #maincontent p{
+        line-height:20px;
+        font-weight:lighter;
+        font-size:small;
+    }
+    #maincontent{
+        border-right:1px dashed #c0c0c0;
+    }
     #subcontent h1{
-        font-size:130%;
+        font-size:120%;
     }
     #subcontent h2{
-        font-size:110%;
+        font-size:100%;
+        line-height:10px;
+    }
+    #subcontent p{
+        line-height:20px;
+        font-weight:lighter;
+        font-size:x-small;
     }
 #bottomcontent{
     font-size:80%;
