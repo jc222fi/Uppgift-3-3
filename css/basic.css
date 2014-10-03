@@ -6,16 +6,20 @@
 	margin:auto;
 }
 #topbar{
-    height:240px;
+    height:220px;
+    display:block;
 }
 #menu{
-    height:96px;
+    height:56px;
+    float:left;
+    width:100%;
 }
 #menu li{
     float:left;
 }
 #content{
     max-width:958px;
+    margin-top:0;
 }
 #maincontent{
 	float:left;
@@ -37,7 +41,6 @@ Background topbar : #51473d
 Background content: #eae7d2
 Text color topbar : #eae7d2
 Text color content: #797066
-
 */
 
 /*Länkar i menyn*/
@@ -52,6 +55,9 @@ Text color content: #797066
         padding:5px 15px;
         border-right:1px solid #51473d;
     }
+    #menu>a{
+        display:none;
+    }
     #menu a:link, #menu a:visited{
         background-color:#797066; 
         color:#eae7d2; 
@@ -60,7 +66,7 @@ Text color content: #797066
     #menu a:focus, #menu a:hover{
         background-color:#9c9084;
     }
-    #menu .active{background-color:#eae7d2;color:#797066;}
+    #menu .active a{background-color:#eae7d2;color:#797066;}
 
 /*Övriga länkar*/
 #content ul{
@@ -140,6 +146,6 @@ body{
 }
 #topbar{
     background-image:url("pics/coffey.jpg");
-    background-position:center;
+    background-position:bottom;
 	background-repeat:no-repeat;
 }
