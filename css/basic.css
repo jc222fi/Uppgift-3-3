@@ -8,8 +8,11 @@
 #topbar{
     height:240px;
 }
+#menu{
+    height:96px;
+}
 #menu li{
-    display:inline;
+    float:left;
 }
 #content{
     max-width:960px;
@@ -22,15 +25,71 @@
     float:right;
     width:320px;
 }
+#bottomcontent{
+    clear:both;
+}
 
 /*
 Background topbar : #51473d
 Background content: #eae7d2
-Text color        : #996666
+Text color topbar : #eae7d2
+Text color content: #797066
+
 */
-#topbar{
-    background-color:#51473d;
+body{
+    font-family:Verdana, Geneva, sans-serif;
 }
+#topbar, #menu{
+    background-color:#51473d;
+    color:#eae7d2;
+}
+#topbar{
+    font-size:80%;
+    font-style:italic;
+    text-align:right;
+}
+#menu ul{
+    list-style-type:none;
+}
+#menu a{
+    display:block;
+    text-transform:capitalize;
+    font-size:80%;
+    line-height:30px;
+    padding:5px 15px;
+    border-right:1px solid #51473d;
+}
+#menu a:link, #menu a:visited{
+    background-color:#797066; 
+    color:#eae7d2; 
+    text-decoration:none;
+}
+#menu a:focus, #menu a:hover{
+    background-color:#9c9084;
+}
+#menu .active{background-color:#eae7d2;color:#797066;}
+
 #content{
     background-color:#eae7d2;
+    color:#797066;
+    letter-spacing:1px;
+}
+    h1, h2{
+        color:#51473d;
+        font-family:"Times New Roman", Times, serif;
+        font-weight:normal;
+    }
+    #maincontent h1{
+        color:#797066;
+    }
+    #subcontent h1{
+        font-size:130%;
+    }
+    #subcontent h2{
+        font-size:110%;
+    }
+#bottomcontent{
+    font-size:80%;
+    font-style:italic;
+    text-align:left;
 }
