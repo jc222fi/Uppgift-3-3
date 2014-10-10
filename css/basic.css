@@ -10,7 +10,7 @@
     display:block;
 }
 #menu{
-    height:56px;
+    height:57px;
     float:left;
     width:100%;
 }
@@ -53,12 +53,13 @@ Text color content: #797066
         font-size:80%;
         line-height:30px;
         padding:5px 15px;
-        border-right:1px solid #51473d;
     }
     #menu>a{
         display:none;
     }
     #menu a:link, #menu a:visited{
+        border-top:1px solid #837e78;
+        border-left:1px solid #51473d;
         background-color:#797066; 
         color:#eae7d2; 
         text-decoration:none;
@@ -66,7 +67,13 @@ Text color content: #797066
     #menu a:focus, #menu a:hover{
         background-color:#9c9084;
     }
-    #menu .active a{background-color:#eae7d2;color:#797066;}
+    #menu .active a{
+        background-color:#eae7d2;
+        color:#797066;
+        border-top:1px solid #51473d;
+        border-bottom:1px solid #eae7d2;
+        border-left:0;
+    }
 
 /*Övriga länkar*/
 #content ul{
@@ -88,6 +95,9 @@ body{
 #topbar, #menu{
     background-color:#51473d;
     color:#eae7d2;
+}
+#menu{
+    border-bottom:1px solid #fcfaf4;
 }
 #topbar{
     font-size:80%;
